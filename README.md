@@ -2,9 +2,9 @@
 
 _Symfony Console for Zend Expressive_
 
-[![Build Status](https://travis-ci.org/xtreamlabs/expressive-messenger.svg)](https://travis-ci.org/xtreamlabs/expressive-messenger)
-[![Packagist](https://img.shields.io/packagist/v/xtreamlabs/expressive-messenger.svg)](https://packagist.org/packages/xtreamlabs/expressive-messenger)
-[![Packagist](https://img.shields.io/packagist/vpre/xtreamlabs/expressive-messenger.svg)](https://packagist.org/packages/xtreamlabs/expressive-messenger)
+[![Build Status](https://travis-ci.org/xtreamlabs/expressive-console.svg)](https://travis-ci.org/xtreamlabs/expressive-console)
+[![Packagist](https://img.shields.io/packagist/v/xtreamlabs/expressive-console.svg)](https://packagist.org/packages/xtreamlabs/expressive-console)
+[![Packagist](https://img.shields.io/packagist/vpre/xtreamlabs/expressive-console.svg)](https://packagist.org/packages/xtreamlabs/expressive-console)
 
 This packages brings a [Symfony Console](https://github.com/symfony/console) to your Zend Expressive project.
 
