@@ -27,7 +27,7 @@ class Console
     public static function createFromContainer(ContainerInterface $container) : Console
     {
         $config  = $container->get('config')['console'] ?? [];
-        $version = Versions::getVersion('xtreamwayz/expressive-console');
+        $version = Versions::getVersion('xtreamlabs/expressive-console');
 
         $app = new Application('Zend Expressive Console', $version);
 
