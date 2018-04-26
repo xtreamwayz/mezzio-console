@@ -5,33 +5,33 @@ declare(strict_types=1);
 namespace Xtreamwayz\Expressive\Console;
 
 use PackageVersions\Versions;
-use ProxyManager\Factory\LazyLoadingValueHolderFactory;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
-use Zend\ServiceManager\Proxy\LazyServiceFactory;
-use Zend\ServiceManager\ServiceManager;
-use function class_exists;
+use Symfony\Component\Console\CommandLoader\ContainerCommandLoader;
 
 class Console
 {
     /** @var Application */
-    private $app;
+    private $application;
 
-    public function __construct(Application $app, ContainerInterface $container, array $config)
+    public function __construct(Application $application, ContainerCommandLoader $loader)
     {
-        $this->app = $app;
-        $this->injectLazyServicesIntoContainer($container, $config['lazy_services'] ?? []);
-        $this->addCommands($container, $config['commands'] ?? []);
+        $this->application = $application;
+        $this->application->setCommandLoader($loader);
     }
 
     public static function createFromContainer(ContainerInterface $container) : Console
     {
-        $config  = $container->get('config')['console'] ?? [];
-        $version = Versions::getVersion('xtreamlabs/expressive-console');
+        // Setup command loader
+        $config   = $container->get('config')['console'] ?? [];
+        $commands = $config['commands'] ?? [];
+        $loader   = new ContainerCommandLoader($container, $commands);
 
-        $app = new Application('Zend Expressive Console', $version);
+        // Setup console
+        $version     = Versions::getVersion('xtreamwayz/expressive-console');
+        $application = new Application('Expressive Console', $version);
 
-        return new Console($app, $container, $config);
+        return new self($application, $loader);
     }
 
     /**
@@ -41,35 +41,6 @@ class Console
      */
     public function run() : int
     {
-        return $this->app->run();
-    }
-
-    private function injectLazyServicesIntoContainer(ContainerInterface $container, array $lazyServices) : void
-    {
-        // Skip if we are not dealing with a ServiceManager instance
-        if (! $container instanceof ServiceManager) {
-            return;
-        }
-
-        // Skip if the ProxyManager is not loaded
-        if (! class_exists(LazyLoadingValueHolderFactory::class)) {
-            return;
-        }
-
-        $services = [];
-        foreach ($lazyServices as $lazyService) {
-            $services['lazy_services']['class_map'][$lazyService] = $lazyService;
-            $services['delegators'][$lazyService]                 = [LazyServiceFactory::class];
-        }
-
-        /** @var ServiceManager $container */
-        $container->configure($services);
-    }
-
-    private function addCommands(ContainerInterface $container, array $commands) : void
-    {
-        foreach ($commands as $command) {
-            $this->app->add($container->get($command));
-        }
+        return $this->application->run();
     }
 }
