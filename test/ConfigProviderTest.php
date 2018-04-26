@@ -40,7 +40,5 @@ class ConfigProviderTest extends TestCase
         $this->assertInternalType('array', $config['console']);
         $this->assertArrayHasKey('commands', $config['console']);
         $this->assertInternalType('array', $config['console']['commands']);
-        $this->assertArrayHasKey('lazy_services', $config['console']);
-        $this->assertInternalType('array', $config['console']['lazy_services']);
     }
 }

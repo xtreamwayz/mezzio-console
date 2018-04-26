@@ -22,7 +22,7 @@ class Console
 
     public static function createFromContainer(ContainerInterface $container) : Console
     {
-        // Setup command loader
+        // Setup command loader for lazy loading
         $config   = $container->get('config')['console'] ?? [];
         $commands = $config['commands'] ?? [];
         $loader   = new ContainerCommandLoader($container, $commands);

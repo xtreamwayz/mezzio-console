@@ -24,8 +24,7 @@ class ConfigProvider
     public function getConsole() : array
     {
         return [
-            'commands'      => [],
-            'lazy_services' => [],
+            'commands' => [],
         ];
     }
 }
