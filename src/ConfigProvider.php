@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace XtreamLabs\Expressive\Console;
+namespace Xtreamwayz\Expressive\Console;
 
 class ConfigProvider
 {

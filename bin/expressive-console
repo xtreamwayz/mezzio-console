@@ -24,7 +24,7 @@ if (! file_exists($containerFile)) {
 }
 
 use Psr\Container\ContainerInterface;
-use XtreamLabs\Expressive\Console\Console;
+use Xtreamwayz\Expressive\Console\Console;
 
 /** @var ContainerInterface $container */
 $container = require $containerFile;

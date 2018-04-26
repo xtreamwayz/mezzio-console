@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace XtreamLabs\Expressive\Common;
+namespace XtreamwayzTest\Expressive\Common;
 
 use PHPUnit\Framework\TestCase;
-use XtreamLabs\Expressive\Console\ConfigProvider;
+use Xtreamwayz\Expressive\Console\ConfigProvider;
 
 class ConfigProviderTest extends TestCase
 {

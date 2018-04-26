@@ -1,5 +1,5 @@
 {
-    "name": "xtreamlabs/expressive-console",
+    "name": "xtreamwayz/expressive-console",
     "description": "Symfony Console for Zend Expressive",
     "keywords": [
         "console",
@@ -29,17 +29,17 @@
             "dev-master": "1.0.x-dev"
         },
         "zf": {
-            "config-provider": "XtreamLabs\\Expressive\\Console\\ConfigProvider"
+            "config-provider": "Xtreamwayz\\Expressive\\Console\\ConfigProvider"
         }
     },
     "autoload": {
         "psr-4": {
-            "XtreamLabs\\Expressive\\Console\\": "src/"
+            "Xtreamwayz\\Expressive\\Console\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "XtreamLabsTest\\Expressive\\Console\\": "test/"
+            "XtreamwayzTest\\Expressive\\Console\\": "test/"
         }
     },
     "bin": [
@@ -59,8 +59,8 @@
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     },
     "support": {
-        "issues": "https://github.com/xtreamlabs/expressive-console/issues",
-        "source": "https://github.com/xtreamlabs/expressive-console",
-        "rss": "https://github.com/xtreamlabs/expressive-console/releases.atom"
+        "issues": "https://github.com/xtreamwayz/expressive-console/issues",
+        "source": "https://github.com/xtreamwayz/expressive-console",
+        "rss": "https://github.com/xtreamwayz/expressive-console/releases.atom"
     }
 }
