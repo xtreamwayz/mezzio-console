@@ -9,7 +9,7 @@ use Symfony\Component\Console\Command\Command;
 
 class ExceptionThrowingCommand extends Command
 {
-    public function __construct(string $name = null)
+    public function __construct(?string $name = null)
     {
         parent::__construct($name);
 

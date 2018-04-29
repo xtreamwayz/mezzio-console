@@ -4,8 +4,7 @@
     "keywords": [
         "console",
         "expressive",
-        "zend-expressive",
-        "zendframework"
+        "zend-expressive"
     ],
     "license": "MIT",
     "require": {
