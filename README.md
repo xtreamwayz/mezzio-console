@@ -32,8 +32,8 @@ namespace App;
 return [
     'dependencies' => [
         'factories' => [
-            Command\MyCommand::class      => Command\MyCommandFactory::class,
-            Command\AnotherCommand::class => Command\AnotherCommandFactory::class,
+            Console\MyCommand::class      => Console\MyCommandFactory::class,
+            Console\AnotherCommand::class => Console\AnotherCommandFactory::class,
         ],
     ],
 
