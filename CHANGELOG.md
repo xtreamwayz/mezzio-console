@@ -2,22 +2,26 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 0.1.0 - TBD
+## 0.1.0 - 2018-04-29
 
-Initial tagged release.
+- Initial release.
 
 ### Added
 
-Everything.
+- Nothing.
+
+### Changed
+
+- Nothing.
 
 ### Deprecated
 
-Nothing.
+- Nothing.
 
 ### Removed
 
-Nothing.
+- Nothing.
 
 ### Fixed
 
-Nothing.
+- Nothing.
