@@ -29,6 +29,7 @@ class LazyLoadingCommand extends Command
         /** @var Command $command */
         $command = (new ReflectionClass($commandClass))->newInstanceWithoutConstructor();
         $command->setDefinition(new InputDefinition());
+        $command->setName($name);
         $command->configure();
 
         $this->setName($name);
