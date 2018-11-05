@@ -2,7 +2,7 @@
 
 _Symfony Console for Zend Expressive_
 
-[![Build Status](https://travis-ci.org/xtreamwayz/expressive-console.svg)](https://travis-ci.org/xtreamwayz/expressive-console)
+[![Build Status](https://travis-ci.com/xtreamwayz/expressive-console.svg)](https://travis-ci.com/xtreamwayz/expressive-console)
 [![Packagist](https://img.shields.io/packagist/v/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
 [![Packagist](https://img.shields.io/packagist/vpre/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
 
