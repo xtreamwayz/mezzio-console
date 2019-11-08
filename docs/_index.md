@@ -1,8 +1,8 @@
 ---
-title: "xtreamwayz/expressive-console"
-type: "project"
-layout: "landingpage"
-project: "expressive-console"
+title: xtreamwayz/expressive-console
+type: project
+layout: landingpage
+project: expressive-console
 ---
 
 This packages brings [Symfony Console](https://github.com/symfony/console) to your

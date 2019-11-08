@@ -1,6 +1,6 @@
 params:
   expressive-console:
-    name: "expressive-console"
-    latest: "1.0"
-    develop:
+    name: expressive-console
+    latest: v1
     versions:
+      - v1

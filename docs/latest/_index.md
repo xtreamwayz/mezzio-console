@@ -1,9 +1,9 @@
 ---
-title: "Getting started"
-type: "project"
-layout: "page"
-project: "expressive-console"
-version: "1.0"
+title: Getting started
+type: project
+layout: page
+project: expressive-console
+version: v1
 ---
 
 This packages brings [Symfony Console](https://github.com/symfony/console) to your
