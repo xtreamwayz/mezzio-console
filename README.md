@@ -2,9 +2,10 @@
 
 _Symfony Console for Zend Expressive_
 
-[![Build Status](https://travis-ci.com/xtreamwayz/expressive-console.svg)](https://travis-ci.com/xtreamwayz/expressive-console)
+[![Docs Status](https://github.com/xtreamwayz/expressive-console/workflows/build-docs/badge.svg)](https://github.com/xtreamwayz/expressive-console/actions)
+[![Build Status](https://github.com/xtreamwayz/expressive-console/workflows/qa-tests/badge.svg)](https://github.com/xtreamwayz/expressive-console/actions)
+[![Downloads](https://img.shields.io/packagist/dt/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
 [![Packagist](https://img.shields.io/packagist/v/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
-[![Packagist](https://img.shields.io/packagist/vpre/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
 
 This packages brings [Symfony Console](https://github.com/symfony/console) to your
 [Zend Expressive](https://github.com/zendframework/zend-expressive) project. It uses the `FactoryCommandLoader`
@@ -45,3 +46,20 @@ return [
     ],
 ];
 ```
+
+## Documentation
+
+All project documentation is located in the [./docs](./docs) folder. If you would like to contribute
+to the documentation, please submit a pull request. You can read the docs online:
+https://xtreamwayz.netlify.com/expressive-console/
+
+## Contributing
+
+***BEFORE you start work on a feature or fix***, please read & follow the
+[contributing guidelines](https://github.com/xtreamwayz/.github/blob/master/CONTRIBUTING.md#contributing)
+to help avoid any wasted or duplicate effort.
+
+## Copyright and license
+
+Code released under the [MIT License](https://github.com/xtreamwayz/.github/blob/master/LICENSE.md).
+Documentation distributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
