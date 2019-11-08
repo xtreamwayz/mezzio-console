@@ -1,0 +1,35 @@
+name: qa-tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    strategy:
+      max-parallel: 6
+      matrix:
+        php-versions: ['7.1', '7.2', '7.3']
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@master
+      with:
+        php-version: ${{ matrix.php-versions }}
+        coverage: xdebug #optional
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+
+    - name: Install dependencies
+      run: composer install --no-interaction --no-suggest --no-progress
+
+    - name: Run coding style check
+      run: composer run-script cs-check
+
+    - name: Run test suite
+      run: composer run-script test
