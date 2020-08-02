@@ -19,7 +19,7 @@ class Console
         $this->application = $application;
     }
 
-    public static function createFromContainer(ContainerInterface $container) : Console
+    public static function createFromContainer(ContainerInterface $container): self
     {
         // Setup application
         $version     = Versions::getVersion('xtreamwayz/mezzio-console');
@@ -45,7 +45,7 @@ class Console
      *
      * @return int 0 if everything went fine, or an error code
      */
-    public function run() : int
+    public function run(): int
     {
         return $this->application->run();
     }

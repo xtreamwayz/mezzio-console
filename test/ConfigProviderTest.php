@@ -12,16 +12,16 @@ class ConfigProviderTest extends TestCase
     /** @var ConfigProvider */
     private $provider;
 
-    public function setUp() : void
+    public function setUp(): void
     {
         $this->provider = new ConfigProvider();
     }
 
-    public function testInvocationReturnsArray() : array
+    public function testInvocationReturnsArray(): array
     {
         $config = ($this->provider)();
 
-        self::assertInternalType('array', $config);
+        $this->assertIsArray($config);
 
         return $config;
     }
@@ -29,16 +29,16 @@ class ConfigProviderTest extends TestCase
     /**
      * @depends testInvocationReturnsArray
      */
-    public function testReturnedArrayContainsDependencies(array $config) : void
+    public function testReturnedArrayContainsDependencies(array $config): void
     {
         $this->assertArrayHasKey('dependencies', $config);
-        $this->assertInternalType('array', $config['dependencies']);
+        $this->assertIsArray($config['dependencies']);
         $this->assertArrayHasKey('factories', $config['dependencies']);
-        $this->assertInternalType('array', $config['dependencies']['factories']);
+        $this->assertIsArray($config['dependencies']['factories']);
 
         $this->assertArrayHasKey('console', $config);
-        $this->assertInternalType('array', $config['console']);
+        $this->assertIsArray($config['console']);
         $this->assertArrayHasKey('commands', $config['console']);
-        $this->assertInternalType('array', $config['console']['commands']);
+        $this->assertIsArray($config['console']['commands']);
     }
 }

@@ -6,7 +6,7 @@ namespace Xtreamwayz\Mezzio\Console;
 
 class ConfigProvider
 {
-    public function __invoke() : array
+    public function __invoke(): array
     {
         return [
             'dependencies' => $this->getDependencies(),
@@ -14,14 +14,14 @@ class ConfigProvider
         ];
     }
 
-    public function getDependencies() : array
+    public function getDependencies(): array
     {
         return [
             'factories' => [],
         ];
     }
 
-    public function getConsole() : array
+    public function getConsole(): array
     {
         return [
             'commands' => [],

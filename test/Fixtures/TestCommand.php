@@ -16,7 +16,7 @@ class TestCommand extends Command
     /** @var OutputInterface */
     public $output;
 
-    protected function configure() : void
+    protected function configure(): void
     {
         $this
             ->setName('foo:bar')
@@ -24,15 +24,17 @@ class TestCommand extends Command
             ->setAliases(['afoobar']);
     }
 
-    protected function interact(InputInterface $input, OutputInterface $output) : void
+    protected function interact(InputInterface $input, OutputInterface $output): void
     {
         $output->writeln('interact called');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : int
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->input  = $input;
         $this->output = $output;
         $output->writeln('called');
+
+        return Command::SUCCESS;
     }
 }
