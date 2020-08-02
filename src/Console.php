@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xtreamwayz\Expressive\Console;
+namespace Xtreamwayz\Mezzio\Console;
 
 use PackageVersions\Versions;
 use Psr\Container\ContainerInterface;
@@ -22,8 +22,8 @@ class Console
     public static function createFromContainer(ContainerInterface $container) : Console
     {
         // Setup application
-        $version     = Versions::getVersion('xtreamwayz/expressive-console');
-        $application = new Application('Expressive Console', $version);
+        $version     = Versions::getVersion('xtreamwayz/mezzio-console');
+        $application = new Application('Mezzio Console', $version);
 
         // Setup command loader for lazy loading
         $config     = $container->get('config')['console'] ?? [];

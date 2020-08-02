@@ -1,3 +1,3 @@
-module github.com/xtreamwayz/expressive-console
+module github.com/xtreamwayz/mezzio-console
 
 go 1.13
