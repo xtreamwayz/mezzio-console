@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace XtreamwayzTest\Expressive\Console\Fixtures;
+namespace XtreamwayzTest\Mezzio\Console\Fixtures;
 
 use RuntimeException;
 use Symfony\Component\Console\Command\Command;

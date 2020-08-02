@@ -1,24 +1,24 @@
-# Expressive Console
+# mezzio-console Console
 
-_Symfony Console for Zend Expressive_
+_Symfony Console for Mezzio_
 
-[![Docs Status](https://github.com/xtreamwayz/expressive-console/workflows/build-docs/badge.svg)](https://github.com/xtreamwayz/expressive-console/actions)
-[![Build Status](https://github.com/xtreamwayz/expressive-console/workflows/qa-tests/badge.svg)](https://github.com/xtreamwayz/expressive-console/actions)
-[![Downloads](https://img.shields.io/packagist/dt/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
-[![Packagist](https://img.shields.io/packagist/v/xtreamwayz/expressive-console.svg)](https://packagist.org/packages/xtreamwayz/expressive-console)
+[![Docs Status](https://github.com/xtreamwayz/mezzio-console/workflows/build-docs/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
+[![Build Status](https://github.com/xtreamwayz/mezzio-console/workflows/qa-tests/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
+[![Downloads](https://img.shields.io/packagist/dt/xtreamwayz/mezzio-console.svg)](https://packagist.org/packages/xtreamwayz/mezzio-console)
+[![Packagist](https://img.shields.io/packagist/v/xtreamwayz/mezzio-console.svg)](https://packagist.org/packages/xtreamwayz/mezzio-console)
 
 This packages brings [Symfony Console](https://github.com/symfony/console) to your
-[Zend Expressive](https://github.com/zendframework/zend-expressive) project. It uses the `FactoryCommandLoader`
-for lazy loading dependencies. The `FactoryCommandLoader` does almost a good job: It only loads the one command
-that is required. But if no command is requested, it still initializes all commands to get the descriptions
-for each command. This is fixed by using a `LazyLoadingCommand`. With a bit of reflection and magic it grabs
-the configuration from the original command while preventing the command from executing. This way you end with
-a list of all commands and their descriptions.
+[Mezzio](https://github.com/mezzio/mezzio) project. It uses the `FactoryCommandLoader` for lazy loading
+dependencies. The `FactoryCommandLoader` does almost a good job: It only loads the one command that is
+required. But if no command is requested, it still initializes all commands to get the descriptions for
+each command. This is fixed by using a `LazyLoadingCommand`. With a bit of reflection and magic it grabs
+the configuration from the original command while preventing the command from executing. This way you end
+with a list of all commands and their descriptions.
 
 ## Installation
 
 ```bash
-$ composer require xtreamwayz/expressive-console
+$ composer require xtreamwayz/mezzio-console
 ```
 
 ## Configuration
@@ -51,11 +51,11 @@ return [
 
 All project documentation is located in the [./docs](./docs) folder. If you would like to contribute
 to the documentation, please submit a pull request. You can read the docs online:
-https://xtreamwayz.netlify.com/expressive-console/
+https://xtreamwayz.netlify.app/mezzio-console/
 
 ## Contributing
 
-***BEFORE you start work on a feature or fix***, please read & follow the
+**_BEFORE you start work on a feature or fix_**, please read & follow the
 [contributing guidelines](https://github.com/xtreamwayz/.github/blob/master/CONTRIBUTING.md#contributing)
 to help avoid any wasted or duplicate effort.
 

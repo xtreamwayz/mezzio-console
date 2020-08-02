@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace XtreamwayzTest\Expressive\Console;
+namespace XtreamwayzTest\Mezzio\Console;
 
 use PHPUnit\Framework\TestCase;
-use Xtreamwayz\Expressive\Console\ConfigProvider;
+use Xtreamwayz\Mezzio\Console\ConfigProvider;
 
 class ConfigProviderTest extends TestCase
 {

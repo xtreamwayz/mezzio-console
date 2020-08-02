@@ -1,6 +1,6 @@
 params:
-  expressive-console:
-    name: expressive-console
+  mezzio-console:
+    name: mezzio-console
     latest: v1
     versions:
       - v1

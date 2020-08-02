@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace XtreamwayzTest\Expressive\Console;
+namespace XtreamwayzTest\Mezzio\Console;
 
 use PHPUnit\Framework\TestCase;
 use Prophecy\Prophecy\ObjectProphecy;
 use Psr\Container\ContainerInterface;
-use Xtreamwayz\Expressive\Console\Console;
-use XtreamwayzTest\Expressive\Console\Fixtures\ExceptionThrowingCommand;
-use XtreamwayzTest\Expressive\Console\Fixtures\TestCommand;
+use Xtreamwayz\Mezzio\Console\Console;
+use XtreamwayzTest\Mezzio\Console\Fixtures\ExceptionThrowingCommand;
+use XtreamwayzTest\Mezzio\Console\Fixtures\TestCommand;
 
 class ConsoleTest extends TestCase
 {
