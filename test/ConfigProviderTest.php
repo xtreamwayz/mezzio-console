@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace XtreamwayzTest\Expressive\Common;
+namespace XtreamwayzTest\Expressive\Console;
 
 use PHPUnit\Framework\TestCase;
 use Xtreamwayz\Expressive\Console\ConfigProvider;
