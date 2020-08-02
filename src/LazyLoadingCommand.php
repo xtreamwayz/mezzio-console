@@ -38,7 +38,7 @@ class LazyLoadingCommand extends Command
         $this->setHelp($command->getHelp());
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output) : ?int
+    protected function execute(InputInterface $input, OutputInterface $output): ?int
     {
         /** @var Command $command */
         $command = $this->container->get($this->commandClass);
