@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8effcba4145b136f753d47f73e0c7004",
+    "content-hash": "b68165e784ea19a1d2bd56f09d008200",
     "packages": [
         {
             "name": "ocramius/package-versions",

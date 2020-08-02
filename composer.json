@@ -21,10 +21,7 @@
     "sort-packages": true
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    },
-    "zf": {
+    "laminas": {
       "config-provider": "Xtreamwayz\\Mezzio\\Console\\ConfigProvider"
     }
   },
