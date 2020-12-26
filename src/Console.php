@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Xtreamwayz\Mezzio\Console;
 
-use PackageVersions\Versions;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\CommandLoader\FactoryCommandLoader;
@@ -22,8 +21,7 @@ class Console
     public static function createFromContainer(ContainerInterface $container): self
     {
         // Setup application
-        $version     = Versions::getVersion('xtreamwayz/mezzio-console');
-        $application = new Application('Mezzio Console', $version);
+        $application = new Application('Mezzio Console');
 
         // Setup command loader for lazy loading
         $config     = $container->get('config')['console'] ?? [];
