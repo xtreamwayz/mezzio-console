@@ -6,6 +6,12 @@
     "mezzio"
   ],
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Geert Eltink",
+      "homepage": "https://github.com/geerteltink"
+    }
+  ],
   "require": {
     "php": "^7.3 || ^8.0",
     "psr/container": "^1.0",
@@ -15,9 +21,12 @@
     "laminas/laminas-coding-standard": "^2.0",
     "phpspec/prophecy-phpunit": "^2.0",
     "phpstan/phpstan": "^0.12",
-    "phpunit/phpunit": "^9.5"
+    "phpunit/phpunit": "^9.4"
   },
   "config": {
+    "platform": {
+      "php": "7.4"
+    },
     "sort-packages": true
   },
   "extra": {
@@ -53,7 +62,8 @@
   },
   "support": {
     "issues": "https://github.com/xtreamwayz/mezzio-console/issues",
+    "forum": "https://github.com/xtreamwayz/community/discussions",
     "source": "https://github.com/xtreamwayz/mezzio-console",
-    "rss": "https://github.com/xtreamwayz/mezzio-console/releases.atom"
+    "docs": "https://xtreamwayz.github.io/mezzio-console/"
   }
 }
