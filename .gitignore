@@ -1,6 +1,5 @@
 .phpcs-cache
-/clover.xml
-/coveralls-upload.json
-/phpunit.xml
-/vendor/
 .phpunit.result.cache
+composer.lock
+phpunit.xml
+vendor/
