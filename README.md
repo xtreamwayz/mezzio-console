@@ -1,14 +1,8 @@
-# mezzio-console Console
+# mezzio-console
 
 _Symfony Console for Mezzio_
 
-[![PHPUnit tests](https://github.com/xtreamwayz/mezzio-console/workflows/PHPUnit%20tests/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
-[![Static Analysis](https://github.com/xtreamwayz/mezzio-console/workflows/Static%20Analysis/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
-[![Check Coding Standards](https://github.com/xtreamwayz/mezzio-console/workflows/Check%20Coding%20Standards/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
-[![Publish Docs](https://github.com/xtreamwayz/mezzio-console/workflows/Publish%20Docs/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
-[![Automatic Releases](https://github.com/xtreamwayz/mezzio-console/workflows/Automatic%20Releases/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions)
-[![Downloads](https://img.shields.io/packagist/dt/xtreamwayz/mezzio-console.svg)](https://packagist.org/packages/xtreamwayz/mezzio-console)
-[![Packagist](https://img.shields.io/packagist/v/xtreamwayz/mezzio-console.svg)](https://packagist.org/packages/xtreamwayz/mezzio-console)
+[![Continuous Integration](https://github.com/xtreamwayz/mezzio-console/workflows/Continuous%20Integration/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions/workflows/continuous-integration.yml)
 
 This packages brings [Symfony Console](https://github.com/symfony/console) to your
 [Mezzio](https://github.com/mezzio/mezzio) project. It uses the `FactoryCommandLoader` for lazy loading
