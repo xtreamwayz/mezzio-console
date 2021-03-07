@@ -2,7 +2,7 @@
 
 _Symfony Console for Mezzio_
 
-[![Continuous Integration](https://github.com/xtreamwayz/mezzio-console/workflows/Continuous%20Integration/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions/workflows/continuous-integration.yml)
+[![Continuous Integration](https://github.com/xtreamwayz/mezzio-console/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/xtreamwayz/mezzio-console/actions/workflows/continuous-integration.yml)
 
 This packages brings [Symfony Console](https://github.com/symfony/console) to your
 [Mezzio](https://github.com/mezzio/mezzio) project. It uses the `FactoryCommandLoader` for lazy loading
