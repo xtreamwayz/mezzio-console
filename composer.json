@@ -21,8 +21,8 @@
   "require-dev": {
     "laminas/laminas-coding-standard": "^2.3.0",
     "phpspec/prophecy-phpunit": "^2.0.1",
-    "phpstan/phpstan": "^1.2.0",
-    "phpunit/phpunit": "^9.5.10"
+    "phpstan/phpstan": "^1.4.2",
+    "phpunit/phpunit": "^9.5.11"
   },
 
   "config": {
